@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchbor-Tags</title>
+</head>
+<body>
+    <header>
+        <h1>Anchor-Tags (&lt;a&gt;) - Links in HTML</h1>
+
+        <p>Mit dem Anchor-Tags können wir Links erstellen. Links führen zu anderen Seiten, Dateien oder zu einer Stelle auf derselben Seite.</p>
+
+        <hr>
+
+        <main>
+            <section id="ziel">
+                <h2>1. Grundaufbau eines Links</h2>
+                <p>So sieht ein einfacher Link im Code aus:</p>
+
+                <pre>&it;a href="https://google.com/"&gt; Ich bin ein Links &lt;/a&gt;</pre>
+
+                <p>So sieht ein Link im Browser aus:</p>
+
+                <a href="https://google.com/">Google</a>
+
+            </section>
+
+            <section>
+                <h2>2. Das Attribut href</h2>
+                <p>href steht für Hypertext Reference. Das Attribut href gibt an, wohin der Link.
+                    Ohne href ist es kein richtiger Link.
+                </p>
+
+                <ul style="list-style-type: square">
+                    <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    <li><a href="https://lernplattform.gfn.de/">Moodle</a></li>
+                    <li><a href="https://www.ihk.de/">Ihhhhh... HK</a></li>
+
+                    <li><code>href="./010_hallo.html"</code> -> link zu einer Datei im gleichen Ordner</li>
+                    <li><code>href="#ziel"</code> -> Link zzu einer Stelle auf derselben Seite</li>
+                    <li><code>href="https://google.com/"</code> -> Link der zu einer anderen Website führt</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Link in einem neuen Tab öffnen</h2>
+
+                <p>Mit <code>target="_blank"</code> öfffnet sich der Link in einem neuen Tab.</p>
+
+                <pre>&lt;a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"&gt; Ich bin ein Link&lt;/a&gt;</pre>
+
+                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Das ist ein Link</a>
+
+                <p><strong>noopener</strong> <br>
+                    Sicherheit bei <code>target="_blank"</code>, das die Zielseite, meine Seite nicht manipulieren kann.
+                </p>
+
+                <p>
+                    <strong>noreferrer</strong> <br>
+                    Datenschutz, bedeutet die Zielseite sieht nicht, von welcher Seite der Klick kam.
+                </p>
+
+                <p>
+                    <strong>rel</strong> <br>
+                    relationship
+                </p>
+            </section>
+        </main>
+    </header>
+</body>
+</html>
