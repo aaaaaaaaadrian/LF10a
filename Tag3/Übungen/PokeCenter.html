@@ -1,0 +1,163 @@
+<!-- Pokémon-Version – „PokéCenter Registrierung“
+Aufgabe:
+
+Du arbeitest im PokéCenter und musst ein System erstellen, um Trainer und ihre Pokémon zu registrieren.
+
+Anforderungen:
+1. Kontaktformular (Trainer-Anmeldung)
+
+Erstelle ein Formular mit:  - Trainername
+                            - Region (Dropdown: Kanto, Johto, Hoenn, Sinnoh)
+                            - Lieblings-Pokémon (Textfeld)
+                            - Anzahl Pokémon
+                            - Checkbox: „Ich habe ein verletztes Pokémon“
+                            - Button: „Registrieren“
+
+2. Tabelle (Pokémon-Übersicht)
+
+Erstelle eine Tabelle mit:  - Pokémon-Name
+                            - Typ
+                            - Level
+                            - Status (gesund / verletzt)
+
+Bonus: Verwende Farben für Typen (z. B. Wasser = blau) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <main>
+           
+            <Section>
+ 
+                <form>
+                    <p>
+                        <label for="name">Trainerame (pflicht)</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+ 
+                    <p>
+                        <label for="area">Region</label>
+                        <select name="area" id="area">
+                            <option value="" disabled selected>Bitte auswählen</option>
+                            <option value="kanto">Kanto</option>
+                            <option value="johto">Johto</option>
+                            <option value="hoenn">Hoenn</option>
+                            <option value="sinnoh">Sinnoh</option>
+                        </select>
+                    </p>
+ 
+                     <p>
+                        <label for="liebling">Lieblings-Pokémon</label>
+                        <input type="text" name="liebing" id="liebling" required>
+                    </p>
+ 
+                    <p>
+                        <label for="pokemon">Anzahl Pokemon</label>
+                        <input type="number" name="pokemon" id="pokemon" min="1" max="999">
+                    </p>
+ 
+                   <p>
+                        <h4>Ich habe ein verletztes Pokemon:</h3>
+                        <input type="checkbox" name="yes" id="yes" value="yes">
+                        <label for="yes">Ja</label>
+ 
+                    <br>
+ 
+                         <input type="checkbox" name="no" id="no" value="no">
+                        <label for="no">Nein</label>
+                    </p>
+ 
+                    <button type="submit">Resgistrieren</button>
+       
+                </form>
+            </Section>          
+           
+            <section>
+ 
+                <table border="3">
+                    <caption>Pokemon-Übersicht</caption>
+ 
+                    <thead>
+                        <tr>
+                            <th scope="col">Pokemon-Name</th>
+                            <th scope="col">Typ</th>
+                            <th scope="col">Level</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+ 
+                    <tbody>
+                        <tr>
+                            <th scope="row">Glurak</th>
+                            <td scope="row">Feuer/Flug</td>
+                            <td scope="row">55</td>
+                            <td scope="row">gesund</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Gengar</th>
+                            <td scope="row">Geist/Gift</td>
+                            <td scope="row">48</td>
+                            <td scope="row">besiegt/kampfunfähig</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lucario</th>
+                            <td scope="row">Kampf/Stahl</td>
+                            <td scope="row">42</td>
+                            <td scope="row">gesund</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Aquana</th>
+                            <td scope="row">Wasser</td>
+                            <td scope="row">39</td>
+                            <td scope="row">vergiftet</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Knackrack</th>
+                            <td scope="row">Drache/Boden</td>
+                            <td scope="row">62</td>
+                            <td scope="row">gesund</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lavados</th>
+                            <td scope="row">Feuer/Flug</td>
+                            <td scope="row">60</td>
+                            <td scope="row">gesund</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nebulak</th>
+                            <td scope="row">Geist/Gift</td>
+                            <td scope="row">15</td>
+                            <td scope="row">verletzt</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zamazenta (König des Schildes)</th>
+                            <td scope="row">Kampf/Stahl</td>
+                            <td scope="row">70</td>
+                            <td scope="row">gesund</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Quajutsu</th>
+                            <td scope="row">Wasser</td>
+                            <td scope="row">44</td>
+                            <td scope="row">vergiftet</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kaumalat</th>
+                            <td scope="row">Drache/Boden</td>
+                            <td scope="row">12</td>
+                            <td scope="row">gesund</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+
+</html>
+
